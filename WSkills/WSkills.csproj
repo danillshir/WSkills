@@ -1,0 +1,583 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6C76678D-7A9B-490B-A471-CCFD3823A121}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WSkills</RootNamespace>
+    <AssemblyName>WSkills</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\AddCharity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\AddCharity.Designer.cs">
+      <DependentUpon>AddCharity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AddVolunteers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\AddVolunteers.Designer.cs">
+      <DependentUpon>AddVolunteers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Admission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Admission.Designer.cs">
+      <DependentUpon>Admission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\EditCharity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\EditCharity.Designer.cs">
+      <DependentUpon>EditCharity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Invent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Invent.Designer.cs">
+      <DependentUpon>Invent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\MenuAdm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\MenuAdm.Designer.cs">
+      <DependentUpon>MenuAdm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Report.Designer.cs">
+      <DependentUpon>Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Volunteers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Volunteers.Designer.cs">
+      <DependentUpon>Volunteers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Charity.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Connection.cs" />
+    <Compile Include="Coordinator\CoordinatorMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Coordinator\CoordinatorMenu.Designer.cs">
+      <DependentUpon>CoordinatorMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Coordinator\EditRunners.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Coordinator\EditRunners.Designer.cs">
+      <DependentUpon>EditRunners.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Coordinator\SponsorsOverview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Coordinator\SponsorsOverview.Designer.cs">
+      <DependentUpon>SponsorsOverview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Country.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Event.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EventType.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gender.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Marathon.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Marathon1DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Marathon1DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="MoreInformation\Charity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MoreInformation\Charity.Designer.cs">
+      <DependentUpon>Charity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MoreInformation\HowLongIsAMarathon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MoreInformation\HowLongIsAMarathon.Designer.cs">
+      <DependentUpon>HowLongIsAMarathon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MoreInformation\Information.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MoreInformation\Information.Designer.cs">
+      <DependentUpon>Information.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MoreInformation\InformationMap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MoreInformation\InformationMap.Designer.cs">
+      <DependentUpon>InformationMap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MoreInformation\MarathonSkills2021.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MoreInformation\MarathonSkills2021.Designer.cs">
+      <DependentUpon>MarathonSkills2021.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MoreInformation\PreviousRaceResults.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MoreInformation\PreviousRaceResults.Designer.cs">
+      <DependentUpon>PreviousRaceResults.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Position.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RaceKitOption.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Registration.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrationEvent.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrationStatus.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Role.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Runer\Contacts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Runer\Contacts.Designer.cs">
+      <DependentUpon>Contacts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Runer\MyCharity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Runer\MyCharity.Designer.cs">
+      <DependentUpon>MyCharity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Runer\RunnerEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Runer\RunnerEdit.Designer.cs">
+      <DependentUpon>RunnerEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Runer\RunnerMaraphonRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Runer\RunnerMaraphonRegister.Designer.cs">
+      <DependentUpon>RunnerMaraphonRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Runer\RunnerMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Runer\RunnerMenu.Designer.cs">
+      <DependentUpon>RunnerMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Runer\RunnerRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Runer\RunnerRegister.Designer.cs">
+      <DependentUpon>RunnerRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Runer\RunnerRegistratsia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Runer\RunnerRegistratsia.Designer.cs">
+      <DependentUpon>RunnerRegistratsia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Runer\RunnerResults.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Runer\RunnerResults.Designer.cs">
+      <DependentUpon>RunnerResults.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Runer\RunnerSponsor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Runer\RunnerSponsor.Designer.cs">
+      <DependentUpon>RunnerSponsor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Runer\RunnerThanks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Runer\RunnerThanks.Designer.cs">
+      <DependentUpon>RunnerThanks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Runer\SponsorConfirmation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Runer\SponsorConfirmation.Designer.cs">
+      <DependentUpon>SponsorConfirmation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Runer\sponsorMoneyUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Runer\sponsorMoneyUserControl.Designer.cs">
+      <DependentUpon>sponsorMoneyUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Runner.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sponsorship.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Staff.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Timesheet.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="User.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Volunteer.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Admin\AddCharity.resx">
+      <DependentUpon>AddCharity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\AddVolunteers.resx">
+      <DependentUpon>AddVolunteers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Admission.resx">
+      <DependentUpon>Admission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\EditCharity.resx">
+      <DependentUpon>EditCharity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Invent.resx">
+      <DependentUpon>Invent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\MenuAdm.resx">
+      <DependentUpon>MenuAdm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Report.resx">
+      <DependentUpon>Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Volunteers.resx">
+      <DependentUpon>Volunteers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Coordinator\CoordinatorMenu.resx">
+      <DependentUpon>CoordinatorMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Coordinator\EditRunners.resx">
+      <DependentUpon>EditRunners.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Coordinator\SponsorsOverview.resx">
+      <DependentUpon>SponsorsOverview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MoreInformation\Charity.resx">
+      <DependentUpon>Charity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MoreInformation\HowLongIsAMarathon.resx">
+      <DependentUpon>HowLongIsAMarathon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MoreInformation\Information.resx">
+      <DependentUpon>Information.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MoreInformation\InformationMap.resx">
+      <DependentUpon>InformationMap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MoreInformation\MarathonSkills2021.resx">
+      <DependentUpon>MarathonSkills2021.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MoreInformation\PreviousRaceResults.resx">
+      <DependentUpon>PreviousRaceResults.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Runer\Contacts.resx">
+      <DependentUpon>Contacts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Runer\MyCharity.resx">
+      <DependentUpon>MyCharity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Runer\RunnerEdit.resx">
+      <DependentUpon>RunnerEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Runer\RunnerMaraphonRegister.resx">
+      <DependentUpon>RunnerMaraphonRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Runer\RunnerMenu.resx">
+      <DependentUpon>RunnerMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Runer\RunnerRegister.resx">
+      <DependentUpon>RunnerRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Runer\RunnerRegistratsia.resx">
+      <DependentUpon>RunnerRegistratsia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Runer\RunnerResults.resx">
+      <DependentUpon>RunnerResults.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Runer\RunnerSponsor.resx">
+      <DependentUpon>RunnerSponsor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Runer\RunnerThanks.resx">
+      <DependentUpon>RunnerThanks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Runer\SponsorConfirmation.resx">
+      <DependentUpon>SponsorConfirmation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Runer\sponsorMoneyUserControl.resx">
+      <DependentUpon>sponsorMoneyUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EntityDeploy Include="Model1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Marathon1DataSet.xsc">
+      <DependentUpon>Marathon1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Marathon1DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Marathon1DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Marathon1DataSet.xss">
+      <DependentUpon>Marathon1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\conquer-cancer-brazil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diabetes-brazil-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\heart-health-sao-paulo-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\human-rights-centre-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\airbus-a380.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bus.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\capybara.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f1-car.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\football-field.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\horse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jaguar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pair-of-havaianas.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ronaldinho.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sloth.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\slug.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\worm.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\banco-banespa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ibirapuera-park-lake.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\marathon-image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\teatro-municipal.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\marathon-skills-2016-marathon-map.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-computer-icons-check-mark-symbol-cross-miscellaneous-angle-cross-thumbnail.png" />
+    <None Include="Resources\png-transparent-computer-icons-check-mark-symbol-cross-miscellaneous-angle-cross.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\map-icon-toilets.png" />
+    <None Include="Resources\map-icon-start.png" />
+    <None Include="Resources\map-icon-medical.png" />
+    <None Include="Resources\map-icon-information.png" />
+    <None Include="Resources\map-icon-energy-bars.png" />
+    <None Include="Resources\map-icon-drinks.png" />
+    <None Include="Resources\horse1.png" />
+    <None Include="Resources\slug1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Database1.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Database1_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Database1.mdf</DependentUpon>
+    </Content>
+    <Content Include="Model1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Model1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 и x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
