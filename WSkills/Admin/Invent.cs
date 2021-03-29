@@ -69,7 +69,7 @@ namespace WSkills.Admin
         private void Invent_Load(object sender, EventArgs e)
         {
             loadRunners();
-            loadItems();
+            
         }
         private void loadRunners() //Загрузка всех бегунов и их пакетов
         {
