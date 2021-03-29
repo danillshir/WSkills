@@ -28,31 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddCharity));
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.buttonPhoto = new System.Windows.Forms.Button();
-            this.label9 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.cancelButton = new System.Windows.Forms.Button();
+            this.saveButton = new System.Windows.Forms.Button();
+            this.logoPictureBox = new System.Windows.Forms.PictureBox();
+            this.logoLabel = new System.Windows.Forms.Label();
+            this.descriptionFileLabel = new System.Windows.Forms.Label();
+            this.photoButton = new System.Windows.Forms.Button();
+            this.photoTextBox = new System.Windows.Forms.TextBox();
+            this.photoLabel = new System.Windows.Forms.Label();
+            this.descriptionTextBox = new System.Windows.Forms.TextBox();
+            this.descriptionLabel = new System.Windows.Forms.Label();
+            this.nameTextBox = new System.Windows.Forms.TextBox();
+            this.nameLabel = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.logoPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(185, 91);
+            this.label2.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.Location = new System.Drawing.Point(116, 107);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(439, 22);
+            this.label2.Size = new System.Drawing.Size(740, 36);
             this.label2.TabIndex = 25;
             this.label2.Text = "Управление благотворительными организациями";
             // 
@@ -66,108 +70,18 @@
             this.button1.TabIndex = 24;
             this.button1.Text = "Назад";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(213, 12);
+            this.label1.Location = new System.Drawing.Point(245, 12);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(393, 36);
             this.label1.TabIndex = 23;
             this.label1.Text = "MARATHON SKILLS 2021";
-            // 
-            // buttonPhoto
-            // 
-            this.buttonPhoto.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonPhoto.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonPhoto.Location = new System.Drawing.Point(621, 364);
-            this.buttonPhoto.Name = "buttonPhoto";
-            this.buttonPhoto.Size = new System.Drawing.Size(125, 43);
-            this.buttonPhoto.TabIndex = 54;
-            this.buttonPhoto.Text = "Загрузить";
-            this.buttonPhoto.UseVisualStyleBackColor = true;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label9.Location = new System.Drawing.Point(663, 345);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(38, 16);
-            this.label9.TabIndex = 53;
-            this.label9.Text = "Фото";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(569, 133);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(219, 199);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 52;
-            this.pictureBox1.TabStop = false;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(121, 177);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(442, 200);
-            this.textBox2.TabIndex = 58;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.Location = new System.Drawing.Point(48, 178);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(67, 16);
-            this.label5.TabIndex = 57;
-            this.label5.Text = "Описание";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(121, 132);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(193, 27);
-            this.textBox1.TabIndex = 56;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(19, 133);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(96, 16);
-            this.label4.TabIndex = 55;
-            this.label4.Text = "Наименование";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            // 
-            // button2
-            // 
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button2.Location = new System.Drawing.Point(252, 383);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(125, 41);
-            this.button2.TabIndex = 59;
-            this.button2.Text = "Отмена";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button3.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button3.Location = new System.Drawing.Point(121, 383);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(125, 41);
-            this.button3.TabIndex = 60;
-            this.button3.Text = "Сохранить";
-            this.button3.UseVisualStyleBackColor = true;
             // 
             // panel2
             // 
@@ -176,40 +90,182 @@
             this.panel2.Controls.Add(this.label1);
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(804, 88);
+            this.panel2.Size = new System.Drawing.Size(930, 88);
             this.panel2.TabIndex = 61;
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.panel1.Location = new System.Drawing.Point(0, 453);
+            this.panel1.Location = new System.Drawing.Point(0, 635);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(804, 88);
+            this.panel1.Size = new System.Drawing.Size(930, 88);
             this.panel1.TabIndex = 62;
+            // 
+            // cancelButton
+            // 
+            this.cancelButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.cancelButton.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.cancelButton.ForeColor = System.Drawing.Color.Black;
+            this.cancelButton.Location = new System.Drawing.Point(623, 514);
+            this.cancelButton.Name = "cancelButton";
+            this.cancelButton.Size = new System.Drawing.Size(115, 37);
+            this.cancelButton.TabIndex = 79;
+            this.cancelButton.Text = "Отмена";
+            this.cancelButton.UseVisualStyleBackColor = true;
+            this.cancelButton.Click += new System.EventHandler(this.cancelButton_Click);
+            // 
+            // saveButton
+            // 
+            this.saveButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.saveButton.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.saveButton.ForeColor = System.Drawing.Color.Black;
+            this.saveButton.Location = new System.Drawing.Point(497, 514);
+            this.saveButton.Name = "saveButton";
+            this.saveButton.Size = new System.Drawing.Size(115, 37);
+            this.saveButton.TabIndex = 68;
+            this.saveButton.Text = "Сохранить";
+            this.saveButton.UseVisualStyleBackColor = true;
+            this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
+            // 
+            // logoPictureBox
+            // 
+            this.logoPictureBox.BackColor = System.Drawing.SystemColors.Control;
+            this.logoPictureBox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("logoPictureBox.BackgroundImage")));
+            this.logoPictureBox.Location = new System.Drawing.Point(497, 342);
+            this.logoPictureBox.Name = "logoPictureBox";
+            this.logoPictureBox.Size = new System.Drawing.Size(241, 151);
+            this.logoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.logoPictureBox.TabIndex = 78;
+            this.logoPictureBox.TabStop = false;
+            // 
+            // logoLabel
+            // 
+            this.logoLabel.AutoSize = true;
+            this.logoLabel.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.logoLabel.ForeColor = System.Drawing.Color.Black;
+            this.logoLabel.Location = new System.Drawing.Point(493, 306);
+            this.logoLabel.Name = "logoLabel";
+            this.logoLabel.Size = new System.Drawing.Size(159, 22);
+            this.logoLabel.TabIndex = 77;
+            this.logoLabel.Text = "Текущий логотип:";
+            // 
+            // descriptionFileLabel
+            // 
+            this.descriptionFileLabel.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.descriptionFileLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+            this.descriptionFileLabel.Location = new System.Drawing.Point(455, 168);
+            this.descriptionFileLabel.Name = "descriptionFileLabel";
+            this.descriptionFileLabel.Size = new System.Drawing.Size(401, 67);
+            this.descriptionFileLabel.TabIndex = 76;
+            this.descriptionFileLabel.Text = "Оставьте поле \"Логотип файл\" пустым\r\nесли вы не хотете загружать логотип";
+            this.descriptionFileLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // photoButton
+            // 
+            this.photoButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.photoButton.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.photoButton.ForeColor = System.Drawing.Color.Black;
+            this.photoButton.Location = new System.Drawing.Point(694, 258);
+            this.photoButton.Name = "photoButton";
+            this.photoButton.Size = new System.Drawing.Size(122, 30);
+            this.photoButton.TabIndex = 75;
+            this.photoButton.Text = "Просмотр...";
+            this.photoButton.UseVisualStyleBackColor = true;
+            this.photoButton.Click += new System.EventHandler(this.photoButton_Click);
+            // 
+            // photoTextBox
+            // 
+            this.photoTextBox.Font = new System.Drawing.Font("Arial", 14.25F);
+            this.photoTextBox.ForeColor = System.Drawing.Color.Black;
+            this.photoTextBox.Location = new System.Drawing.Point(497, 259);
+            this.photoTextBox.Multiline = true;
+            this.photoTextBox.Name = "photoTextBox";
+            this.photoTextBox.ReadOnly = true;
+            this.photoTextBox.Size = new System.Drawing.Size(191, 30);
+            this.photoTextBox.TabIndex = 74;
+            // 
+            // photoLabel
+            // 
+            this.photoLabel.AutoSize = true;
+            this.photoLabel.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.photoLabel.ForeColor = System.Drawing.Color.Black;
+            this.photoLabel.Location = new System.Drawing.Point(508, 234);
+            this.photoLabel.Name = "photoLabel";
+            this.photoLabel.Size = new System.Drawing.Size(110, 22);
+            this.photoLabel.TabIndex = 73;
+            this.photoLabel.Text = "Фото файл:";
+            // 
+            // descriptionTextBox
+            // 
+            this.descriptionTextBox.BackColor = System.Drawing.SystemColors.Control;
+            this.descriptionTextBox.Font = new System.Drawing.Font("Arial", 14.25F);
+            this.descriptionTextBox.ForeColor = System.Drawing.Color.Black;
+            this.descriptionTextBox.Location = new System.Drawing.Point(60, 292);
+            this.descriptionTextBox.Multiline = true;
+            this.descriptionTextBox.Name = "descriptionTextBox";
+            this.descriptionTextBox.Size = new System.Drawing.Size(400, 201);
+            this.descriptionTextBox.TabIndex = 72;
+            // 
+            // descriptionLabel
+            // 
+            this.descriptionLabel.AutoSize = true;
+            this.descriptionLabel.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.descriptionLabel.ForeColor = System.Drawing.Color.Black;
+            this.descriptionLabel.Location = new System.Drawing.Point(56, 260);
+            this.descriptionLabel.Name = "descriptionLabel";
+            this.descriptionLabel.Size = new System.Drawing.Size(100, 22);
+            this.descriptionLabel.TabIndex = 71;
+            this.descriptionLabel.Text = "Описание:";
+            // 
+            // nameTextBox
+            // 
+            this.nameTextBox.BackColor = System.Drawing.SystemColors.Control;
+            this.nameTextBox.Font = new System.Drawing.Font("Arial", 14.25F);
+            this.nameTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.nameTextBox.Location = new System.Drawing.Point(60, 206);
+            this.nameTextBox.Multiline = true;
+            this.nameTextBox.Name = "nameTextBox";
+            this.nameTextBox.Size = new System.Drawing.Size(176, 32);
+            this.nameTextBox.TabIndex = 70;
+            // 
+            // nameLabel
+            // 
+            this.nameLabel.AutoSize = true;
+            this.nameLabel.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.nameLabel.ForeColor = System.Drawing.Color.Black;
+            this.nameLabel.Location = new System.Drawing.Point(56, 181);
+            this.nameLabel.Name = "nameLabel";
+            this.nameLabel.Size = new System.Drawing.Size(144, 22);
+            this.nameLabel.TabIndex = 69;
+            this.nameLabel.Text = "Наименование:";
             // 
             // AddCharity
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 536);
+            this.ClientSize = new System.Drawing.Size(913, 719);
+            this.Controls.Add(this.cancelButton);
+            this.Controls.Add(this.saveButton);
+            this.Controls.Add(this.logoPictureBox);
+            this.Controls.Add(this.logoLabel);
+            this.Controls.Add(this.descriptionFileLabel);
+            this.Controls.Add(this.photoButton);
+            this.Controls.Add(this.photoTextBox);
+            this.Controls.Add(this.photoLabel);
+            this.Controls.Add(this.descriptionTextBox);
+            this.Controls.Add(this.descriptionLabel);
+            this.Controls.Add(this.nameTextBox);
+            this.Controls.Add(this.nameLabel);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.buttonPhoto);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "AddCharity";
             this.Text = "AddCharity";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Load += new System.EventHandler(this.AddCharity_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.logoPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -220,16 +276,19 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button buttonPhoto;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button cancelButton;
+        private System.Windows.Forms.Button saveButton;
+        public System.Windows.Forms.PictureBox logoPictureBox;
+        private System.Windows.Forms.Label logoLabel;
+        private System.Windows.Forms.Label descriptionFileLabel;
+        private System.Windows.Forms.Button photoButton;
+        public System.Windows.Forms.TextBox photoTextBox;
+        private System.Windows.Forms.Label photoLabel;
+        public System.Windows.Forms.TextBox descriptionTextBox;
+        private System.Windows.Forms.Label descriptionLabel;
+        public System.Windows.Forms.TextBox nameTextBox;
+        private System.Windows.Forms.Label nameLabel;
     }
 }

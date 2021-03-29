@@ -12,12 +12,12 @@ namespace WSkills.Admin
 {
     public partial class Volunteers : Form
     {
-        public string email;
+
         TimeSpan d = new TimeSpan();
         DateTime date = new DateTime(2021, 3, 8);
-        public Volunteers(string email)
+        public Volunteers()
         {
-            this.email = email;
+
             InitializeComponent();
             timer1.Start();
         }

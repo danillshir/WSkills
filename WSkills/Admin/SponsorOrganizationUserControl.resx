@@ -117,23 +117,8 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="logoPictureBox.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAHcAAACXCAIAAACgH1NfAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wwAADsMBx2+oZAAAAsdJREFUeF7t2MFxqzAAANE06y4o4qsBrlxcQWiAGydX4EZCkLDBCAfyR5uMsztc
-        4mDN8BAC/Ha18qlMpDKRykQqE6lMpDKRykQqE6lMpDKRykQqE6lMpDKRykQqE6lMpDKRykQqE6lMpDKR
-        ykQqE6lMpDKRykQqE6lMpDKRykQqE6lMpDKRykQqE6lMpDKRykQqE6lMpDKRykQqE6lMpDKRykQqE6lM
-        pDKRykQqE6lMpDKRykQqE6lMpDKRykQqE6lMpDKRykQqE/2UchdO/06nc5v+fPFUJmKV+64JdVUNvrOt
-        qkPT9X3a5SXDlC9tqBe4q61qLmnflwtSbkOkrKsQp+1sxeg/T0AVrUM37j5rnP73M1Gd2/usvzQPl8XD
-        Vr3f9302TvEQ5fY8Hlvd3A9stS737xE6zJfq9pz0F1s97bNb+YtxigcoJ4vlgpC5+/XNONdu03lyH7DS
-        vOsv03ycn7BU/Hpm2Tk4TokA5Qj6cDy5Z4zEkT5Mi8z8qh9Ln6/Wli3lo+OUqLzy0m7qS+V0BWQu6rj+
-        rNQ2lA+PU6JfO5ez3xrLn7Yt5cPjlOjXrsu505DK/+up8oFxSgQoT9fmYkKtjjDNrNulHXdwLh/p9rw8
-        vebNlPPPy67L32nHu9/ydr/xbJDU/vsZY3OcEmHKY3HaxsO7bVu/Y0xryADk8/L32nfnOfLOtqk89Afe
-        /bLtUx7qu1DFefe5VWGaj6ueKQ/tHqdEP6X8t1KZSGUilYlUJlKZSGUilYlUJlKZSGUilYlUJlKZSGUi
-        lYlUJlKZSGUilYlUJlKZSGUilYlUJlKZSGUilYlUJlKZSGUilYlUJlKZSGUilYlUJlKZSGUilYlUJlKZ
-        SGUilYlUJlKZSGUilYlUJlKZSGUilYlUJlKZSGUilYlUJlKZSGUilYlUJlKZSGUilYlUJlKZSGUilYlU
-        Lt/1+gFOwk38crvVDwAAAABJRU5ErkJggg==
+  <data name="descriptionTextBox.Text" xml:space="preserve">
+    <value>The Clara Santos Oliveira Institute is a non-governmental, non-profit organisation based in Sao Paulo.  Clara founded the institute in 1986 to provide shelter and education to young people who have been through the juvenile court. Today there are five houses in Sao Paulo and we want to expand and set up another three by 2020.
 </value>
   </data>
 </root>

@@ -142,6 +142,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "EditCharity";
             this.Text = "EditCharity";
+            this.Load += new System.EventHandler(this.EditCharity_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);

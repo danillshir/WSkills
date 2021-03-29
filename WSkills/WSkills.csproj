@@ -112,6 +112,12 @@
     <Compile Include="Admin\Report.Designer.cs">
       <DependentUpon>Report.cs</DependentUpon>
     </Compile>
+    <Compile Include="Admin\SponsorOrganizationUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin\SponsorOrganizationUserControl.Designer.cs">
+      <DependentUpon>SponsorOrganizationUserControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin\Volunteers.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -353,6 +359,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\Report.resx">
       <DependentUpon>Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\SponsorOrganizationUserControl.resx">
+      <DependentUpon>SponsorOrganizationUserControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\Volunteers.resx">
       <DependentUpon>Volunteers.cs</DependentUpon>

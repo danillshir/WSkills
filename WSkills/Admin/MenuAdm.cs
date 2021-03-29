@@ -53,14 +53,14 @@ namespace WSkills.Admin
         private void button5_Click(object sender, EventArgs e)
         {
             MenuAdm.ActiveForm.Hide();
-            EditCharity editCharity = new EditCharity(email);
+            EditCharity editCharity = new EditCharity();
             editCharity.Show();
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
             MenuAdm.ActiveForm.Hide();
-            Volunteers volunteers = new Volunteers(email);
+            Volunteers volunteers = new Volunteers();
             volunteers.Show();
         }
 
