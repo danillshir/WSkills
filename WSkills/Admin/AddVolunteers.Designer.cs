@@ -28,6 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             this.button2 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
@@ -35,10 +38,16 @@
             this.label3 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.labelTime = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.fileButton = new System.Windows.Forms.Button();
+            this.fileTextBox = new System.Windows.Forms.TextBox();
+            this.csvDataGrid = new System.Windows.Forms.DataGridView();
             this.panel2.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.csvDataGrid)).BeginInit();
             this.SuspendLayout();
             // 
             // button2
@@ -51,6 +60,7 @@
             this.button2.TabIndex = 36;
             this.button2.Text = "Logout";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label2
             // 
@@ -72,6 +82,7 @@
             this.button1.TabIndex = 34;
             this.button1.Text = "Назад";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
@@ -88,7 +99,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(23, 133);
+            this.label3.Location = new System.Drawing.Point(23, 139);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(178, 18);
             this.label3.TabIndex = 37;
@@ -104,6 +115,7 @@
             this.button3.TabIndex = 38;
             this.button3.Text = "Загрузка";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -115,17 +127,6 @@
             this.button4.TabIndex = 39;
             this.button4.Text = "Отмена";
             this.button4.UseVisualStyleBackColor = true;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(250, 258);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(164, 108);
-            this.label4.TabIndex = 40;
-            this.label4.Text = "поле1: описание поля\r\nполе2: описание поля\r\nполе3: описание поля\r\nполе4: описание" +
-    " поля\r\nполе5: описание поля\r\nполе6: описание поля";
             // 
             // panel2
             // 
@@ -141,18 +142,90 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.panel1.Location = new System.Drawing.Point(-3, 407);
+            this.panel1.Controls.Add(this.labelTime);
+            this.panel1.Location = new System.Drawing.Point(-3, 436);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(686, 88);
             this.panel1.TabIndex = 42;
+            // 
+            // labelTime
+            // 
+            this.labelTime.AutoSize = true;
+            this.labelTime.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelTime.ForeColor = System.Drawing.Color.White;
+            this.labelTime.Location = new System.Drawing.Point(12, 57);
+            this.labelTime.Name = "labelTime";
+            this.labelTime.Size = new System.Drawing.Size(75, 18);
+            this.labelTime.TabIndex = 43;
+            this.labelTime.Text = "labelTime";
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // fileButton
+            // 
+            this.fileButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.fileButton.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.fileButton.Location = new System.Drawing.Point(472, 133);
+            this.fileButton.Name = "fileButton";
+            this.fileButton.Size = new System.Drawing.Size(121, 29);
+            this.fileButton.TabIndex = 76;
+            this.fileButton.Text = "Просмотр...";
+            this.fileButton.UseVisualStyleBackColor = true;
+            this.fileButton.Click += new System.EventHandler(this.fileButton_Click);
+            // 
+            // fileTextBox
+            // 
+            this.fileTextBox.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.fileTextBox.Location = new System.Drawing.Point(207, 133);
+            this.fileTextBox.Name = "fileTextBox";
+            this.fileTextBox.ReadOnly = true;
+            this.fileTextBox.Size = new System.Drawing.Size(249, 29);
+            this.fileTextBox.TabIndex = 77;
+            // 
+            // csvDataGrid
+            // 
+            this.csvDataGrid.AllowUserToAddRows = false;
+            this.csvDataGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.csvDataGrid.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.csvDataGrid.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.csvDataGrid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.csvDataGrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Arial", 18F);
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.csvDataGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            this.csvDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Arial", 18F);
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.csvDataGrid.DefaultCellStyle = dataGridViewCellStyle10;
+            this.csvDataGrid.EnableHeadersVisualStyles = false;
+            this.csvDataGrid.Location = new System.Drawing.Point(185, 250);
+            this.csvDataGrid.Name = "csvDataGrid";
+            this.csvDataGrid.ReadOnly = true;
+            this.csvDataGrid.RowHeadersVisible = false;
+            this.csvDataGrid.Size = new System.Drawing.Size(289, 169);
+            this.csvDataGrid.TabIndex = 79;
             // 
             // AddVolunteers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(672, 491);
+            this.ClientSize = new System.Drawing.Size(672, 520);
+            this.Controls.Add(this.csvDataGrid);
+            this.Controls.Add(this.fileButton);
+            this.Controls.Add(this.fileTextBox);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.label3);
@@ -163,6 +236,9 @@
             this.Text = "AddVolunteers";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.csvDataGrid)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -177,8 +253,12 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label labelTime;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Button fileButton;
+        private System.Windows.Forms.TextBox fileTextBox;
+        private System.Windows.Forms.DataGridView csvDataGrid;
     }
 }
