@@ -51,7 +51,7 @@ namespace WSkills.Runer
             RunnerMenu runnerMenu = new RunnerMenu();
             runnerMenu.Show();
         }
-        private void loadCharity() //загрузка организации
+        private void loadCharity()
         {
             try
             {
@@ -77,7 +77,7 @@ namespace WSkills.Runer
             }
         }
 
-        private void loadSponsors() //загрузка всех людей, которые проспонсировали бегуна
+        private void loadSponsors() 
         {
             try
             {
