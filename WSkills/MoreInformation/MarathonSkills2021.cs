@@ -22,6 +22,7 @@ namespace WSkills.MoreInformation
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
+            MarathonSkills2021.ActiveForm.Hide();
             InformationMap informationMap = new InformationMap();
             informationMap.Show();
         }

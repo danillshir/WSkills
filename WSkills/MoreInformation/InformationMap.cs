@@ -28,6 +28,8 @@ namespace WSkills.MoreInformation
 
         private void button1_Click(object sender, EventArgs e)
         {
+            MarathonSkills2021 marathonSkills2021 = new MarathonSkills2021();
+            marathonSkills2021.Show();
             Close();
         }
 

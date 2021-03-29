@@ -29,27 +29,16 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.listView1 = new System.Windows.Forms.ListView();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.labelTime = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(272, 84);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(233, 22);
-            this.label2.TabIndex = 39;
-            this.label2.Text = "Управление волонтерами";
             // 
             // button1
             // 
@@ -102,10 +91,6 @@
             this.panel1.Size = new System.Drawing.Size(803, 88);
             this.panel1.TabIndex = 43;
             // 
-            // timer1
-            // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
             // labelTime
             // 
             this.labelTime.AutoSize = true;
@@ -117,6 +102,10 @@
             this.labelTime.TabIndex = 44;
             this.labelTime.Text = "labelTime";
             // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // SponsorsOverview
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -124,7 +113,6 @@
             this.ClientSize = new System.Drawing.Size(800, 485);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.listView1);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "SponsorsOverview";
@@ -134,12 +122,10 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ListView listView1;
