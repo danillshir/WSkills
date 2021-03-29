@@ -438,6 +438,7 @@
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "RunnerEdit";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RunnerEdit";
             this.Load += new System.EventHandler(this.RunnerEdit_Load);
             this.panel1.ResumeLayout(false);

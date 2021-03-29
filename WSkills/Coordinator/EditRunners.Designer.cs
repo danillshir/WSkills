@@ -227,6 +227,7 @@
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "EditRunners";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EditRunners";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

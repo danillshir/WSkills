@@ -187,6 +187,7 @@
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "MenuAdm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Marathon Skills 2021 - Administrator menu";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

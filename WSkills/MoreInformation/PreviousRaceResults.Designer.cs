@@ -347,6 +347,7 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "PreviousRaceResults";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PreviousRaceResults";
             this.Load += new System.EventHandler(this.PreviousRaceResults_Load);
             this.panel1.ResumeLayout(false);

@@ -158,6 +158,7 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "SponsorConfirmation";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Maratgon Skills 2021 - Sponsorship confirmation";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

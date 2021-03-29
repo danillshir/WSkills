@@ -424,6 +424,7 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "RunnerRegistratsia";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Marathon Skills 2021 - Register as a runner";
             this.Load += new System.EventHandler(this.RunnerRegistratsia_Load);
             this.panel2.ResumeLayout(false);

@@ -127,6 +127,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Name = "Charity";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Marathon Skills 2021 - Charity";
             this.Load += new System.EventHandler(this.Charity_Load);
             this.panel1.ResumeLayout(false);

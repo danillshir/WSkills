@@ -141,6 +141,7 @@
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "EditCharity";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EditCharity";
             this.Load += new System.EventHandler(this.EditCharity_Load);
             this.panel2.ResumeLayout(false);

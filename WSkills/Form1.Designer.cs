@@ -38,8 +38,8 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.labelTime = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -144,15 +144,6 @@
             this.panel1.Size = new System.Drawing.Size(543, 99);
             this.panel1.TabIndex = 7;
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.panel2.Controls.Add(this.labelTime);
-            this.panel2.Location = new System.Drawing.Point(-9, 396);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(543, 88);
-            this.panel2.TabIndex = 8;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -165,6 +156,15 @@
             this.label3.Text = "date";
             this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.panel2.Controls.Add(this.labelTime);
+            this.panel2.Location = new System.Drawing.Point(-9, 396);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(543, 88);
+            this.panel2.TabIndex = 8;
             // 
             // Form1
             // 
@@ -179,6 +179,7 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Marathon Skills 2021";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

@@ -201,6 +201,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "RunnerMenu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Marathon Skills 2021 - Runner menu";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

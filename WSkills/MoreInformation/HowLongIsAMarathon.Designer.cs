@@ -532,6 +532,7 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "HowLongIsAMarathon";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Marathon Skills 2021 - How Long Is A Marathon";
             this.Load += new System.EventHandler(this.HowLongIsAMarathon_Load);
             this.tabControl1.ResumeLayout(false);

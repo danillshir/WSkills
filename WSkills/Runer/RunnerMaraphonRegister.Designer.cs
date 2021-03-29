@@ -355,6 +355,7 @@
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "RunnerMaraphonRegister";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Marathon 2021";
             this.Load += new System.EventHandler(this.RunnerMaraphonRegister_Load);
             this.panel1.ResumeLayout(false);

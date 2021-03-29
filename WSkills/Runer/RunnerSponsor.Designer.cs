@@ -427,6 +427,7 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "RunnerSponsor";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Marathon Skills 2021 - Sponsor a runner";
             this.Load += new System.EventHandler(this.RunnerSponsor_Load);
             this.panel1.ResumeLayout(false);

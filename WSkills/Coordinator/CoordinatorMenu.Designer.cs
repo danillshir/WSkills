@@ -159,6 +159,7 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "CoordinatorMenu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Marathon Skills 2021 - Coordinator menu";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
